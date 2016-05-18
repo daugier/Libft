@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/27 19:03:32 by daugier           #+#    #+#             */
-/*   Updated: 2016/02/29 23:26:43 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/18 17:34:27 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s)
 	int		len;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen((char*)s);
 	while (s[len - 1] == ' ' || s[len - 1] == '\t' || s[len - 1] == '\n')
 		len--;

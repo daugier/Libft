@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/13 17:14:35 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/13 17:22:09 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/18 17:13:17 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void		ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 	{
 		lst = *alst;
 		*alst = (*alst)->next;
-		del((lst)->content, *(lst)->content_size);
+		del((lst)->content, (*lst).content_size);
 		free(lst);
 	}
 }

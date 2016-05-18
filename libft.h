@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/26 21:36:34 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/13 17:35:52 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/18 17:10:46 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 typedef struct		s_list
 {
 	void			*content;
-	size_t			*content_size;
+	size_t			content_size;
 	struct s_list	*next;
 
 }					t_list;
