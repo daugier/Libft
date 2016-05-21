@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/27 17:58:07 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/18 17:29:25 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/20 16:21:34 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	i = 0;
 	if (!s)
 		return (NULL);
-	if (!(s2 = (char*)malloc(sizeof(char) * ft_strlen((char*)s) + 1)) || !s)
+	if (!(s2 = (char*)malloc(sizeof(char) * ft_strlen(s) + 1)) || !s)
 		return (s2);
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 #    By: daugier <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/26 22:14:18 by daugier           #+#    #+#              #
-#    Updated: 2016/05/13 17:17:31 by daugier          ###   ########.fr        #
+#    Updated: 2016/05/21 16:49:51 by daugier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,7 @@ SRC = ft_atoi.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
 	  ft_lstnew.c \
+	  ft_charjoin.c \
 
 OBJ = $(SRC:.c=.o)
 

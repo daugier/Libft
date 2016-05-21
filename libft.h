@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/26 21:36:34 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/18 17:10:46 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/21 17:02:55 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char				*ft_strncat(char *s1, const char *s2, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strnstr(const char *big, const char *little,
 					size_t len);
-int					ft_strlen(char *str);
+size_t				ft_strlen(const char *str);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_isascii(int c);
@@ -84,5 +84,6 @@ void				ft_lstdel(t_list **alsr, void (*del)(void*, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+char				*ft_charjoin(char *s1, char s2);
 
 #endif

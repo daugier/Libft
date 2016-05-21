@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/27 13:28:37 by daugier           #+#    #+#             */
-/*   Updated: 2016/03/02 15:44:57 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/20 16:22:29 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (!little[i])
 		return ((char *)big);
-	j = ft_strlen((char *)little);
+	j = ft_strlen(little);
 	while (big[i] && len >= j)
 	{
 		if (ft_strncmp(big + i, little, j) == 0)

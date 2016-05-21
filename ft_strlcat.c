@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/27 14:15:57 by daugier           #+#    #+#             */
-/*   Updated: 2016/02/29 21:52:17 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/20 16:21:14 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	if (j < size)
 		dst[i] = '\0';
-	return (j + ft_strlen((char*)src));
+	return (j + ft_strlen(src));
 }
