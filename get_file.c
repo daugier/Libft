@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/19 23:55:34 by daugier           #+#    #+#             */
-/*   Updated: 2016/06/20 00:05:31 by daugier          ###   ########.fr       */
+/*   Updated: 2016/06/20 00:14:12 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ char		*get_file(char *av)
 	while (get_next_line((int const)fd, &tmp))
 	{
 		str = ft_strjoin_f(str, tmp);
+		str = ft_strjoin_f(str, "\n");
 		free(tmp);
 		tmp = NULL;
 	}
+	close(fd);
 	return (str);
 }
