@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   get_file.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/27 18:32:32 by daugier           #+#    #+#             */
-/*   Updated: 2016/06/19 23:53:10 by daugier          ###   ########.fr       */
+/*   Created: 2016/06/19 23:55:34 by daugier           #+#    #+#             */
+/*   Updated: 2016/06/20 00:05:31 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char		*get_file(char *av)
 {
-	size_t	i;
-	char	*cpy;
+	int		fd;
+	char	*str;
+	char	*tmp;
 
-	if (!s)
+	str = (char*)malloc(sizeof(char) * 1);
+	str[0] = '\0';
+	if ((fd = open(av, O_RDONLY)) == -1)
 		return (NULL);
-	i = ft_strlen(s);
-	if (!(cpy = (char*)malloc(sizeof(char) * len + 1)) || !s || start > i)
-		return (NULL);
-	i = 0;
-	while (s[start] && i < len)
-		cpy[i++] = s[start++];
-	cpy[i] = '\0';
-	return (cpy);
+	while (get_next_line((int const)fd, &tmp))
+	{
+		str = ft_strjoin_f(str, tmp);
+		free(tmp);
+		tmp = NULL;
+	}
+	return (str);
 }

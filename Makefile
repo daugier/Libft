@@ -6,7 +6,7 @@
 #    By: daugier <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/26 22:14:18 by daugier           #+#    #+#              #
-#    Updated: 2016/06/19 23:27:26 by daugier          ###   ########.fr        #
+#    Updated: 2016/06/20 00:06:07 by daugier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC = ft_atoi.c get_next_line.c ft_lenchar.c ft_sqrt.c ft_print_tab.c \
 	  ft_strnew.c ft_memdel.c ft_putendl_fd.c ft_putstr_fd.c ft_striter.c \
 	  ft_strmap.c ft_strsplit.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
 	  ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_charjoin.c ft_itoa.c \
+	  ft_strjoin_f.c ft_strsub_f.c get_file.c \
 
 OBJ = $(SRC:.c=.o)
 

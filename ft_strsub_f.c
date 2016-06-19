@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_strsub_f.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/27 18:32:32 by daugier           #+#    #+#             */
-/*   Updated: 2016/06/19 23:53:10 by daugier          ###   ########.fr       */
+/*   Created: 2016/06/19 23:52:36 by daugier           #+#    #+#             */
+/*   Updated: 2016/06/19 23:54:23 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char	*ft_strsub_f(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*cpy;
@@ -26,5 +26,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	while (s[start] && i < len)
 		cpy[i++] = s[start++];
 	cpy[i] = '\0';
+	free((char*)s);
 	return (cpy);
 }
