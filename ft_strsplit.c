@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/27 19:03:45 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/27 11:09:35 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/27 15:09:44 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,6 @@ char		**ft_strsplit(char const *s, char c)
 			tab[j++][k] = '\0';
 			i--;
 		}
-	tab[j] = 0;
+	tab[j] = NULL;
 	return (tab);
 }

@@ -6,7 +6,7 @@
 /*   By: daugier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/24 18:09:38 by daugier           #+#    #+#             */
-/*   Updated: 2016/05/24 18:11:19 by daugier          ###   ########.fr       */
+/*   Updated: 2016/05/27 15:00:46 by daugier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_print_tab(char **tab)
 	x = 0;
 	while (tab[x])
 	{
-		ft_putstr(tab[x]);
+		ft_putendl(tab[x]);
 		x++;
 	}
 }
